@@ -1,3 +1,4 @@
+
 /**
  * This file should be placed at the node_modules sub-directory of the directory where you're
  * executing it.
@@ -10,6 +11,7 @@ exports.solve = function(fileName) {
   let result = doSolve(formula.clauses, formula.variables)
   return result // two fields: isSat and satisfyingAssignment
 }
+
 
  
 
@@ -66,6 +68,13 @@ function doSolve(clauses, assignment) {
       assignment = nextAssignment(assignment)
       }
       p++;
+  }
+  for(var y1 = 0; y1 < assignment.length;y1++){
+    if(assignment[y1] == 1){
+      assignment[y1] = true
+    }else{
+      assignment[y1] = false
+    }
   }
   let result = {'isSat': isSat, satisfyingAssignment: null}
   if (isSat) {
