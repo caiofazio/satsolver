@@ -1,4 +1,4 @@
-﻿/**
+/**
  * This file should be placed at the node_modules sub-directory of the directory where you're
  * executing it.
  *
@@ -13,8 +13,8 @@ exports.solve = function(fileName) {
 
  
 
- // NAO DELETAR 
-/*function nextAssignment(currentAssignment) { //Menos uso de memoria, mas aparentemente mais lento
+ // NAO DELETAR Menos uso de memoria, mas aparentemente mais lento
+/*function nextAssignment(currentAssignment) { 
   var valores = currentAssignment.join('');
   valores = parseInt(valores, 2)
   valores++
